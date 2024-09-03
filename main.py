@@ -45,4 +45,4 @@ def test_model(model, dataloader, device):
             loss = nn.MSELoss()(policy_output, target_action) + nn.MSELoss()(value_output, target_action.sum(dim=1, keepdim=True))
             total_loss += loss.item()
     avg_loss = total_loss / len(dataloader)
-    print(f'Test
+    print(f'Test)
