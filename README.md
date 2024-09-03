@@ -64,15 +64,3 @@ python main.py --mode test
 ```
 This command will load the test dataset and evaluate the model's performance on new data, outputting the test loss.
 
-## Project Structure:
-.
-├── data/                       # Folder for storing datasets
-├── models/                     # Contains code for perception, attention, and decision-making modules
-│   ├── perception_module.py    # Implementation of the perception module
-│   ├── attention_module.py     # Implementation of the cross-domain attention module
-│   └── decision_module.py      # Implementation of the decision-making module
-├── utils/                      # Contains utilities such as data loaders, loss functions, etc.
-├── run_simulation.py           # Script to run the integrated system simulation
-├── main.py                     # Main script for training and testing
-├── requirements.txt            # List of dependencies
-└── README.md                   # Project documentation
