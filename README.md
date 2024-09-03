@@ -37,7 +37,7 @@ Then, install the Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-note: Ensure that the CARLA simulator is installed and that the environment variables are correctly configured. You can refer to the CARLA official documentation for installation and configuration: https://carla.readthedocs.io/en/latest/build_windows/
+note: Ensure that the CARLA simulator is installed and that the environment variables are correctly configured. You can refer to the CARLA official documentation for installation and configuration: https://carla.readthedocs.io/en/latest/build_linux/
 
 ## How to Run the Code
 Run the Simulation
