@@ -10,10 +10,6 @@ This project aims to develop an multimodal robot navigation system that processe
 - [Environment Setup](#environment-setup)
 - [How to Run the Code](#how-to-run-the-code)
 - [Training and Testing](#training-and-testing)
-- [Project Structure](#project-structure)
-- [Download Links](#download-links)
-- [Contribution Guidelines](#contribution-guidelines)
-- [License](#license)
 
 ## Environment Setup
 
