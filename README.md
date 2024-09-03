@@ -1,8 +1,8 @@
-# Integrated Robot Navigation System
+# Multimodal Robot Navigation System
 
 ## Project Overview
 
-This project aims to develop an integrated robot navigation system that processes data from various sensors (such as IMU, camera, and LiDAR) through a perception module, a cross-domain attention module, and a decision-making module, ultimately outputting the robot's action strategy in real-world scenarios. The system is based on the CARLA simulator and utilizes deep learning techniques for training and testing.
+This project aims to develop an multimodal robot navigation system that processes data from various sensors (such as IMU, camera, and LiDAR) through a perception module, a cross-domain attention module, and a decision-making module, ultimately outputting the robot's action strategy in real-world scenarios. The system is based on the CARLA simulator and utilizes deep learning techniques for training and testing.
 
 ## Table of Contents
 
