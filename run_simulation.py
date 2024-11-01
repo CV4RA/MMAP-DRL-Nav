@@ -20,16 +20,16 @@ class IntegratedSystem:
         return policy, value
 
 def run_simulation():
-    env = CarlaEnv()  # handle CARLA simulation
+    env = CarlaEnv()  # 开始处理 CARLA 仿真
     system = IntegratedSystem(device='cuda' if torch.cuda.is_available() else 'cpu')
     
-    for _ in range(100):  # Run 100 simulation steps
+    for _ in range(100):  # 运行100个模拟步骤
         image = torch.randn(3, 256, 256).unsqueeze(0).to(system.device)  
         lidar_data = torch.randn(1, 256, 256).unsqueeze(0).to(system.device)
         imu_data = torch.randn(1, 6).to(system.device)
 
         policy, value = system.forward(image, lidar_data, imu_data)
-        # Convert policy to CARLA control signals and apply them
+        # 将策略转换为CARLA控制信号
         control = carla.VehicleControl(throttle=float(policy[0][0]), steer=float(policy[0][1]))
         env.vehicle.apply_control(control)
 

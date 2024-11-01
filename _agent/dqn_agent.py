@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 import numpy as np
-
+from .pruning import prune_model
+from .quantization import quantize_model
 class DQNAgent:
     def __init__(self, state_size, action_size, config):
         self.state_size = state_size
