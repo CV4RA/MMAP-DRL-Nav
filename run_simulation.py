@@ -2,6 +2,8 @@ import torch
 from models.perception_module import PerceptionModule
 from models.attention_module import CrossDomainAttention
 from models.decision_module import DecisionModule
+from models.dqn_agent import DQNAgent
+from envs.carla_environment import CarlaEnvironment
 import carla
 
 class IntegratedSystem:
