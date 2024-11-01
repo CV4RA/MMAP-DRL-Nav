@@ -4,7 +4,6 @@ import torch.nn as nn
 class PerceptionModule(nn.Module):
     def __init__(self):
         super(PerceptionModule, self).__init__()
-        # Example SegNet-like architecture for scene segmentation
         self.segmentation_net = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1),
             nn.ReLU(),
