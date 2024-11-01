@@ -71,6 +71,6 @@ python /_agent/_lightweight/train.py
 Load the model and reason:
 
 ```bash
-python jetson/deploy.py --onnx_model_path path/to/your_model.onnx
+python _jetson_robot/deploy.py --onnx_model_path /_model/mmap_model.onnx
 ```
 
