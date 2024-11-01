@@ -18,9 +18,9 @@ class PerceptionModule(nn.Module):
 
     def forward(self, imu_data, image, lidar_data):
         segmentation = self.segmentation_net(image)
-        scene_info = segmentation.mean(dim=(2, 3))  # Example scene information extraction
+        scene_info = segmentation.mean(dim=(2, 3))  # scene information extraction
         odometry = imu_data  # Example usage of IMU data for odometry
-        obstacles = lidar_data.mean(dim=1)  # Example obstacle detection
-        boundary = lidar_data.max(dim=1)[0]  # Example boundary extraction
+        obstacles = lidar_data.mean(dim=1)  # obstacle detection
+        boundary = lidar_data.max(dim=1)[0]  # boundary extraction
 
         return scene_info, segmentation, odometry, obstacles, boundary
