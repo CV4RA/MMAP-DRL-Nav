@@ -3,7 +3,7 @@
 ## Project Overview
 
 This project aims to develop an multimodal robot navigation system that processes data from various sensors (such as IMU, camera, and LiDAR) through a perception module, a cross-domain attention module, and a decision-making module, ultimately outputting the robot's action strategy in real-world scenarios. The system is based on the CARLA simulator and utilizes deep learning techniques for training and testing.
-
+![alt text](mmap.jpg)
 ## Table of Contents
 
 - [Project Overview](#project-overview)
