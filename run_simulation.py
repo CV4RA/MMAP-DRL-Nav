@@ -18,11 +18,11 @@ class IntegratedSystem:
         return policy, value
 
 def run_simulation():
-    env = CarlaEnv()  # Example class to handle CARLA simulation
+    env = CarlaEnv()  # handle CARLA simulation
     system = IntegratedSystem(device='cuda' if torch.cuda.is_available() else 'cpu')
     
     for _ in range(100):  # Run 100 simulation steps
-        image = torch.randn(3, 256, 256).unsqueeze(0).to(system.device)  # Example data
+        image = torch.randn(3, 256, 256).unsqueeze(0).to(system.device)  
         lidar_data = torch.randn(1, 256, 256).unsqueeze(0).to(system.device)
         imu_data = torch.randn(1, 6).to(system.device)
 

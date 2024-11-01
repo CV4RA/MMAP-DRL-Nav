@@ -13,4 +13,4 @@ class CrossDomainAttention(nn.Module):
         for block in self.attention_blocks:
             x, _ = block(x, x, x)
         
-        return x.mean(dim=0)  # Example output of fused features
+        return x.mean(dim=0)  # output of fused features

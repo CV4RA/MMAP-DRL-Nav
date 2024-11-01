@@ -1,0 +1,12 @@
+train:
+  episodes: 1000
+  batch_size: 32
+  learning_rate: 0.001
+
+agent:
+  epsilon_decay: 0.995
+  epsilon_min: 0.01
+
+model:
+  input_dim: 128
+  hidden_dim: 64
