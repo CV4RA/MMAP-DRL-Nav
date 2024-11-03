@@ -62,7 +62,7 @@ This command will load the test dataset and evaluate the model's performance on 
 
 ## Model Deployment
 
-Model training and derivation：Before you can reason, you need to train the model and export it to ONNX format：
+Model training and derivation based on Jetson_robot：Before you can reason, you need to train the model and export it to ONNX format：
 
 ```bash
 python /_agent/_lightweight/train.py
