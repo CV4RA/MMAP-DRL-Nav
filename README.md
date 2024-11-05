@@ -62,6 +62,7 @@ python main.py --mode test
 This command will load the test dataset and evaluate the model's performance on new data, outputting the test loss.
 
 ## Model Deployment
+It should be noted that the relevant underlying control configuration of our intelligent vehicle will be released later. Here, we only pre-release the relevant steps of algorithm deployment and reasoning.
 
 Model training and derivation based on Jetson_robot：Before you can reason, you need to train the model and export it to ONNX format on a jetson robot：
 
